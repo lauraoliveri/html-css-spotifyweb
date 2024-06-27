@@ -1,0 +1,50 @@
+/* RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*** STYLE ***/
+
+/* Header */
+
+.button-container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.841);
+    position: fixed;
+    z-index: 3;
+    text-align: end;
+    padding: 30px;
+}
+
+.header-container {
+    position: relative;
+}
+
+.button {
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 10px 30px;
+
+}
+
