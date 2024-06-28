@@ -27,6 +27,10 @@ header, main {
     padding-left: 18%;
 }
 
+main {
+    padding-bottom: 80px;
+}
+
 /*** STYLE ***/
 
 /* Header */
@@ -48,7 +52,7 @@ header, main {
 .button {
     border-radius: 50px;
     border: 2px solid white;
-    padding: 10px 30px;
+    padding: 7px 25px;
     color: white;
 }
 
@@ -139,6 +143,58 @@ li span {
     font-size: smaller;
 }
 
+/* Download */
+
+.download-container {
+    padding-left: 15px;
+    color:  rgba(255, 255, 255, 0.565);
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 88px;
+}
+
+.download-app img {
+    width: 15px;
+    vertical-align: middle;
+}
+
+.download-app span {
+    color: white;
+    font-size: smaller;
+    padding-left: 5px;
+}
+
+.download-app {
+    padding-top: 200px;
+    padding-bottom: 8px;
+
+}
+
+#hr-sb {
+    width: 90%;
+}
+
+.profile {
+    padding-top: 15px;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.profile a {
+    color: white;
+}
+
+.profile span {
+    padding-left: 8px;
+}
+
+
 /* Playlist */
 
 .playlist-section {
@@ -172,53 +228,71 @@ li span {
     color: rgba(255, 255, 255, 0.565);
 }
 
-/* Download */
+/* Main */
 
-.download-container {
-    padding-left: 15px;
-    color:  rgba(255, 255, 255, 0.565);
+.section-container-main {
+    width: 100%;
+    padding: 20px;
 }
 
-.download-app img {
-    width: 15px;
-    vertical-align: middle;
+.titles-main{
+    color: white;
 }
 
-.download-app span {
-    color:  rgba(255, 255, 255, 0.565);
+.title-basic {
+    font-size: x-large;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+.titles-main p {
     font-size: smaller;
-    padding-left: 5px;
+    color:  rgba(255, 255, 255, 0.565);
+    padding-bottom: 25px;
 }
 
-.download-app {
-    padding-top: 200px;
-    padding-bottom: 8px;
-
+.section-main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#hr-sb {
-    width: 90%;
+.title-style-one {
+    padding-bottom: 10px;
+    font-size: x-large;
+    font-weight: 700;
+}
+.song-card {
+    width: calc(100% / 6);
+    padding: 7px;
 }
 
-.profile {
-    padding-top: 15px;
+.song-info {
+    text-align: center;
 }
 
-.profile img {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    background-color: grey;
+.title-name {
+    color: white;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    font-size: smaller;
+}
+
+.artist-name {
+    color: rgba(255, 255, 255, 0.565);
+    font-size: small;
+}
+
+.rec-round-img {
     border-radius: 50%;
 }
 
-.profile a {
-    color:  rgba(305, 255, 255, 0.565);
-}
 
-.profile span {
-    padding-left: 8px;
-}
+
+
+
+
+
 
 /* Footer */
 
@@ -275,9 +349,62 @@ footer {
 .right-footer {
     display: flex;
     align-items: center;
+    padding-right:10px
 }
 .right-footer span {
-    padding-right: 8px;
+    padding-right: 10px;
     font-size: smaller;
-    color:  rgb(138, 138, 138);
+    color:  white;
+}
+
+.volume-bar {
+    width: 90px;
+    height: 3px;
+    background-color:  rgb(138, 138, 138);
+    border-radius: 50px; 
+}
+
+/* Middle Footer */
+.middle-f-flex {
+    display: flex;
+    align-items: center;
+    padding-top: 7px;
+}
+
+.middle-f-flex span {
+    color: white;
+    padding-right: 25px;
+}
+
+#circle-play {
+    font-size: 25px;
+}
+
+
+.progress-bar-c {
+    display: flex; 
+    align-items: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 3px;
+    margin-top: 5px;
+    background-color:  rgb(138, 138, 138);
+    border-radius: 50px;
+}
+
+.time {
+    font-size: 10px;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+/*** Hover ***/
+
+.button:hover {
+    padding: 8px 26px;
+    font-size: larger;
 }
