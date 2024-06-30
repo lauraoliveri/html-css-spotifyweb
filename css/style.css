@@ -528,10 +528,6 @@ footer {
         width: 20%;
     }
 
-    header, main {
-        padding-left: 30%;
-    }
-
     .logo {
         width: 40px;
     }
@@ -591,6 +587,10 @@ footer {
         font-size: xx-small;
         width: 30%;
         padding-right: 10px;
+    }
+
+    main,header {
+        padding-left: 30%;
     }
 
     .logo {
