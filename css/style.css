@@ -106,6 +106,7 @@ li a {
     z-index: 1;
     width: 18%;
     height: 100vh;
+    overflow-y: auto;
 }
 
 .logo {
@@ -148,8 +149,6 @@ li span {
 .download-container {
     padding-left: 15px;
     color:  rgba(255, 255, 255, 0.565);
-    position: absolute;
-    bottom: 0;
     padding-bottom: 88px;
 }
 
@@ -193,7 +192,6 @@ li span {
 .profile span {
     padding-left: 8px;
 }
-
 
 /* Playlist */
 
@@ -261,6 +259,7 @@ li span {
     font-size: x-large;
     font-weight: 700;
 }
+
 .song-card {
     width: calc(100% / 6);
     padding: 7px;
@@ -308,9 +307,6 @@ li span {
     font-size: 50px;
     color: white;
 }
-
-
-
 
 /* Footer */
 
@@ -362,31 +358,6 @@ footer {
     color:  rgb(138, 138, 138);
 }
 
-/* Right Footer */
-
-.right-footer {
-    display: flex;
-    align-items: center;
-    padding-right:10px
-}
-.right-footer span {
-    padding-right: 10px;
-    font-size: smaller;
-    color:  white;
-}
-
-.volume-bar {
-    width: 90px;
-    height: 3px;
-    background-color:  rgb(138, 138, 138);
-    border-radius: 50px; 
-}
-
-.volume {
-    background-color:white;
-    width: 20px;
-    height: 3px;
-}
 
 /* Middle Footer */
 .middle-f-flex {
@@ -437,6 +408,40 @@ footer {
     padding-top: 10px;
 }
 
+.progress-bar-c :first-child {
+    padding-right: 20px;
+}
+
+.progress-bar-c :last-child {
+    padding-left: 20px;
+}
+
+/* Right Footer */
+
+.right-footer {
+    display: flex;
+    align-items: center;
+    padding-right:10px
+}
+
+.right-footer span {
+    padding-right: 10px;
+    font-size: smaller;
+    color:  white;
+}
+
+.volume-bar {
+    width: 90px;
+    height: 3px;
+    background-color:  rgb(138, 138, 138);
+    border-radius: 50px; 
+}
+
+.volume {
+    background-color:white;
+    width: 20px;
+    height: 3px;
+}
 
 /*** Hover ***/
 
@@ -495,4 +500,132 @@ footer {
 
 .volume:hover {
     background-color:#1DB954;
+}
+
+
+
+
+/******** RESPONSIVE ********/
+
+/* Tablet */
+
+@media screen and (max-width:700px) {
+    
+    .button-container {
+        font-size: smaller;
+    }
+
+    .ul-header {
+        flex-wrap: wrap;
+    }
+
+    .ul-header li {
+        padding-bottom: 30px;
+    }
+
+    .sidebar {
+        font-size: xx-small;
+        width: 20%;
+    }
+
+    header, main {
+        padding-left: 30%;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .logo div {
+        font-size: medium;
+    }
+
+    li img {
+        width: 20px;
+    }
+
+    .ul-header {
+        width: 90%;
+    }
+
+    .ul-header li {
+        font-size: xx-small;
+        padding-bottom: 0;
+    }
+
+    .song-card {
+        width: calc(100% / 4);
+    }
+
+    /* Footer */
+
+    .icons-song {
+        padding-left: 5px;
+    }
+
+    .left-footer, .middle-footer {
+        font-size: smaller;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    
+    .button-container {
+        font-size: xx-small;
+    }
+
+    .ul-header {
+        flex-wrap: wrap;
+    }
+
+    .ul-header li {
+        padding-bottom: 30px;
+    }
+
+    .button {
+        padding-right: 10px;
+    }
+
+    .sidebar {
+        font-size: xx-small;
+        width: 30%;
+        padding-right: 10px;
+    }
+
+    .logo {
+        width: 35px;
+    }
+
+    .logo div {
+        font-size: small;
+    }
+
+    li img {
+        width: 20px;
+    }
+
+    .ul-header {
+        width: 90%;
+    }
+
+    .ul-header li {
+        font-size: xx-small;
+        padding-bottom: 10px;
+    }
+
+    .song-card {
+        width: calc(100% / 2);
+    }
+
+    /* Footer */
+
+    .icons-song {
+        padding-left: 5px;
+    }
+
+    .left-footer, .middle-footer {
+        font-size: smaller;
+        padding-right: 40px;
+    }
 }
