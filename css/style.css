@@ -24,7 +24,7 @@ a {
 }
 
 header, main {
-    padding-left: 18%;
+    padding-left: 200px;
 }
 
 main {
@@ -37,7 +37,7 @@ main {
 
 /* top */
 .button-container {
-    width: calc(100% - 18%);
+    width: calc(100% - 200px);
     background-color: rgba(0, 0, 0, 0.841);
     position: fixed;
     z-index: 2;
@@ -104,7 +104,7 @@ li a {
     top: 0;
     left: 0;
     z-index: 1;
-    width: 18%;
+    width: 200px;
     height: 100vh;
     overflow-y: auto;
 }
@@ -311,7 +311,6 @@ li span {
 /* Footer */
 
 footer {
-    width: 100%;
     position: relative;
 }
 
@@ -522,12 +521,7 @@ footer {
     .ul-header li {
         padding-bottom: 30px;
     }
-
-    .sidebar {
-        font-size: xx-small;
-        width: 20%;
-    }
-
+  
     .logo {
         width: 40px;
     }
@@ -569,6 +563,7 @@ footer {
     
     .button-container {
         font-size: xx-small;
+        width: calc(100% - 150px);
     }
 
     .ul-header {
@@ -579,18 +574,12 @@ footer {
         padding-bottom: 30px;
     }
 
-    .button {
-        padding-right: 10px;
-    }
-
     .sidebar {
-        font-size: xx-small;
-        width: 30%;
-        padding-right: 10px;
+        width: 150px;
     }
 
     main,header {
-        padding-left: 30%;
+        padding-left: 150px;
     }
 
     .logo {
